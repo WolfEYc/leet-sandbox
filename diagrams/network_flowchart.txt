@@ -1,0 +1,12 @@
+Switch Partition Leader
+    ↓
+Check duplicate?
+    ↓
+If new → record lifecycle entry
+    ↓
+Forward to issuer
+    ↓
+Store issuer response
+    ↓
+Return response
+

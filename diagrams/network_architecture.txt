@@ -1,0 +1,27 @@
+1 Edge (stateless ingress)
+|
+v
+2 
+┌────────────────────────────┐
+│ Partition Leader Process   │
+│                            │
+│  Routing / Duplicate Check │  ← Switching Fabric Logic
+│  In-Memory State Map       │
+│  Replicated Log            │  ← Replication Mechanism
+│  State Machine             │  ← Lifecycle Store 
+└────────────────────────────┘
+NEW → AUTH_SENT → AUTH_RESPONDED → CLEARED → SETTLED
+           ↘        ↘  
+            REVERSED
+
+Asynchronously at intervals
+
+
+Asynchronously at EOD
+
+1 Clearing
+|
+2 Fed processes
+|
+3 Settlement
+
